@@ -1,0 +1,40 @@
+@import 'antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,p {
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+.content{
+   font-family: 'Poppins', sans-serif !important;
+   height: 768px;
+   width: 1366px;
+   background-color: #ffffff;
+   border: 1px solid rgba(46, 91, 255, 0.1);
+}
+
+.ant-breadcrumb ol li {
+  display: flex !important;
+  line-height: 16px !important;
+}
+
+.ant-tooltip-inner {
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+  padding: 8px 12px;
+}
+
+.ant-dropdown-open {
+  background: #EEF7FC;
+}

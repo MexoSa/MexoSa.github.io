@@ -1,0 +1,30 @@
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.title h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.title p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.cardWrapper {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}

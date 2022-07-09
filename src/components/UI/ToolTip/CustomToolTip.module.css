@@ -1,0 +1,9 @@
+.toolTip:hover {
+  cursor: pointer;
+}
+
+.toolTip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,44 @@
+.label {
+  position: absolute;
+  padding: 0 6px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  z-index: 100;
+  top: 0;
+  left: 6px;
+  background-color: white;
+  transform: translateY(-60%);
+  font-family: 'Poppins';
+}
+
+.input {
+  position: relative;
+  padding: 10px 16px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  border-radius: 4px;    
+}
+
+.star {
+  color:red;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.wrapper > div {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.wrapper > span:last-child {
+  margin-top: 7px !important;
+}

@@ -1,0 +1,195 @@
+.modal {
+  border-radius: 12px;
+  overflow: hidden;
+  padding-bottom: 0;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.ant-modal-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+.ant-modal-header {
+  background-color: #F6F7FB !important;
+}
+
+.ant-modal-close-x:hover svg path {
+  fill: #00A0EC;
+  stroke: #00A0EC;
+}
+
+.ant-modal-body {
+  padding: 32px 40px 24px !important;
+}
+
+.ant-modal-footer {
+  padding: 0 40px 45px !important;
+  border-top: none !important;
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.ant-btn {
+  height: auto !important;
+  width: auto !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px !important;
+  cursor: pointer;
+  border-radius: 6px !important;
+  color: white !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  line-height: 16px !important;
+  letter-spacing: -0.1px !important; 
+  border: none !important;
+  outline: none;
+  transition: .2s background-color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ant-btn-primary {
+  background-color: #00A0EC !important;
+}
+
+.ant-btn-primary:hover {
+  background-color: #0683DD !important;
+} 
+
+.ant-btn-default {
+  background-color: #AFB6C6 !important;
+}
+
+.ant-btn-default:hover {
+  background-color: rgba(134, 140, 152, 0.7) !important;
+  color: white !important;
+}
+
+.ant-modal-footer .ant-btn + .ant-btn:not(.ant-dropdown-trigger) {
+  margin-left: 0 !important;
+}
+
+.tooltipFlex {
+  display: flex;
+  align-items: center;
+}
+
+.ant-form-item-control-input-content {
+  display: flex;
+  align-items: start;
+  gap: 6px;
+}
+.ant-form-item-control-input-content > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+}
+
+.ant-form-item-control-input-content > .ant-row.ant-form-item {
+  margin-bottom: 0;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner::after {
+  border: 2px solid #0683DD !important;
+  border-top: 0 !important;
+  border-left: 0 !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  border-radius: 3px !important;
+  background-color: #EEF7FC !important;
+}
+
+.ant-checkbox-checked::after,
+.ant-checkbox-inner {
+  border-radius: 3px !important;
+}
+
+.ant-row.ant-form-item {
+  display: flex;
+  gap:16px;
+}
+
+.ant-form-item-label label::after {
+  display: none;
+}
+
+.ant-checkbox-group {
+  display: grid !important;
+  grid-template-columns: repeat(3,1fr);
+  grid-row-gap: 12px;
+  width: 327px;
+  font-weight: 400;
+}
+
+label[title="Work Week"] {
+  width: 125px;
+}
+
+.ant-checkbox-wrapper.ant-checkbox-wrapper-in-form-item span:nth-child(2) {
+  padding: 0 0 0 16px;
+}
+
+.ant-checkbox-group .ant-checkbox-wrapper.ant-checkbox-wrapper-in-form-item span:nth-child(2) {
+  padding: 0 0 0 8px;
+}
+
+.leavePolicy {
+  padding: 8px 12px;
+  background: #EEF7FC;
+  border-radius: 6px;
+  border: 1px solid #00A0EC;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+}
+
+.leavePolicy > a,
+.leavePolicy > a:hover  {
+  display: inline-block;
+  border-bottom: 1px solid #1890ff;
+  line-height: 0.8em;
+}
+
+.ant-form-item,
+.ant-select,
+.ant-checkbox-wrapper,
+.leavePolicy {
+  color:#1E212A !important;
+}
+
+.fiscalYearWrapper>div>div>div {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.fiscalYearWrapper>div>div>div>div {
+  width: auto;
+}
+
+.ant-select-selection-overflow-item span {
+  color: #00A0EC;
+}
+
+.ant-select-selection-overflow-item > .ant-select-selection-item {
+  margin-top: 5px !important;
+}
+
+.usersWrapper .ant-select-selector {
+  padding: 8px 16px !important;
+}
+
+.formBtnWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 24px;
+}

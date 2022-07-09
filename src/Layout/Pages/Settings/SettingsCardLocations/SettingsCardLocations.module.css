@@ -1,0 +1,94 @@
+.cardWrapper {
+  width: 304px;
+  height: 173px; 
+  box-shadow: 2px 2px 15px rgba(0, 44, 175, 0.05);
+  border-radius: 6px;
+  border: 1px solid rgba(175, 182, 198, 0.4);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  color: #1E212A;
+  position: relative;
+}
+
+.cardTitle {
+  display: flex;
+  gap: 8px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 140%;
+  color: black;
+}
+
+.title:hover {
+  cursor: pointer;
+  color:#00A0EC;
+}
+
+.default {
+  color: white;
+  background: #00A0EC;
+  border-radius: 1000px;
+  padding: 3px 14px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cardLinks {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.cardLink {
+  display: flex;
+  gap:16px;
+  line-height: 16px;
+}
+
+.cardLink>div {
+  width: 91px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.cardLink>a {
+  color: #00A0EC;
+  text-decoration: none;
+}
+
+.cardLink>a:hover {
+  text-decoration: underline;
+}
+
+.cardUsers > div {
+  display: flex !important;
+  gap: 11px;
+}
+
+.dropDown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  position:absolute;
+  right: 10px;
+  top: 12px;
+}
+
+.dropDown > .ant-dropdown-menu {
+  width: 1000px !important;
+}

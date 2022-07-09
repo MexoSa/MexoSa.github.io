@@ -1,22 +1,31 @@
 import { Avatar, Dropdown, Menu } from 'antd'
-import React from 'react'
+import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import DropDownIcon from '../../../../components/Icons/DropDownIcon'
-import { setLocationCardDefault } from '../../../../store/actions/locationCardActions'
+import CustomModal from '../../../../components/UI/Modal/CustomModal'
+import { deleteLocationCard, setLocationCardDefault } from '../../../../store/actions/locationCardActions'
 import s from './SettingsCardLocations.module.css'
+import warning from "../../../../images/warning.png"
 
 const SettingsCardLocations = ({ data: { locationName, isDefault, users, id } }) => {
   const dispatch = useDispatch()
 
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
   const setDefault = () => {
     dispatch(setLocationCardDefault(id))
+  }
+
+  const deleteLocation = () => {
+    dispatch(deleteLocationCard(id))
+    setIsModalOpen(false)
   }
 
   const menu = (
     <Menu>
       <Menu.Item key={'edit'}>Edit</Menu.Item>
       <Menu.Item key={'setDefault'} onClick={setDefault}>Set as Default</Menu.Item>
-      <Menu.Item key={'delete'}>Delete</Menu.Item>
+      <Menu.Item key={'delete'} onClick={() => setIsModalOpen(true)}>Delete</Menu.Item>
     </Menu>
   )
 
@@ -83,6 +92,23 @@ const SettingsCardLocations = ({ data: { locationName, isDefault, users, id } })
         </Dropdown>
         : ''
       }
+      <CustomModal
+        title={'Delete Location'}
+        isModalOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        onOk={deleteLocation}
+        okText={'Yes, Delete'}
+      >
+        <div className={s.deleteModalWRapper}>
+          <p>Are you sure want to delete “USA” Location? </p>
+          <div>
+            <img src={warning} alt="warning icon" />
+            <p>
+              Deleting a location might impact the users' configuration and leave information (e.g. the initial brought forward days).
+            </p>
+          </div>
+        </div>
+      </CustomModal>
     </div>
   )
 }

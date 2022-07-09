@@ -12,3 +12,10 @@ export const setLocationCardDefault = (action) => {
     payload: action
   }
 }
+
+export const deleteLocationCard = (action) => {
+  return {
+    type: 'DELETE_LOCATION_CARD',
+    payload: action
+  }
+}

@@ -193,3 +193,15 @@ label[title="Work Week"] {
   gap: 8px;
   margin-top: 24px;
 }
+
+.custom-modal .ant-modal-content .ant-modal-footer {
+  padding: 0 40px 24px !important;
+}
+
+.deleteBtn {
+  background-color: rgba(242, 68, 69, 1) !important;
+}
+
+.deleteBtn:hover {
+  background-color: #ED3536 !important;
+}

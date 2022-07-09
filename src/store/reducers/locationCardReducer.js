@@ -73,18 +73,23 @@ export const locationCardReducer = (state = initialState, action) => {
         { ...action.payload, id: state.length + 1 },
       ]
     case 'SET_LOCATION_CARD_DEFAULT':
-      return state.map(locationCard => {
-        if (locationCard.id === action.payload) {
-          return {
-            ...locationCard,
-            isDefault: true,
+      return [
+        ...state.map(locationCard => {
+          if (locationCard.id === action.payload) {
+            return {
+              ...locationCard,
+              isDefault: true,
+            }
+          } else {
+            return {
+              ...locationCard,
+            }
           }
-        } else {
-          return {
-            ...locationCard,
-          }
-        }
-      })
+        })]
+    case 'DELETE_LOCATION_CARD':
+      return [
+        ...state.filter(locationCard => +locationCard.id !== action.payload)
+      ]
     default:
       return state
   }

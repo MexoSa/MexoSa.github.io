@@ -8,7 +8,6 @@ import SettingsCardLocations from '../SettingsCardLocations/SettingsCardLocation
 const SettingsLocations = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const locationCard = useSelector(state => state.locationCardReducer)
-  console.log(locationCard)
 
   return (
     <>
